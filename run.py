@@ -31,7 +31,7 @@ def user(username):
     """
     Display chat messages
     """
-    return "Hi " + username
+    return "<h1>Welcome, {0}</h1>{1}".format(username, get_all_messages())
     
     
 @app.route('/<username>/<message>')
